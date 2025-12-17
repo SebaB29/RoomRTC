@@ -1,0 +1,22 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+*.pdb
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+*.md
+!README.md

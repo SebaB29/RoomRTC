@@ -1,0 +1,25 @@
+[package]
+name = "webrtc"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+# Core WebRTC modules
+ice = { path = "./ice" }
+sdp = { path = "./sdp" }
+stun = { path = "./stun" }
+turn = { path = "./turn" }
+
+# Configuration and logging
+logging = { path = "../shared/logger" }
+
+# Internal modules
+media = { path = "./media" }
+network = { path = "./network" }
+
+# External dependencies
+opencv = { version = "0.97", default-features = false, features = ["videoio", "highgui", "imgproc", "clang-runtime"] }
+rand = "0.9.2"
+
+[features]
+default = ["ice/default", "turn/default"]

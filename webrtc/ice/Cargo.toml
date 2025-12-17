@@ -1,0 +1,15 @@
+[package]
+name = "ice"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+stun = { path = "../stun", optional = true }
+turn = { path = "../turn", optional = true }
+logging = { path = "../../shared/logger", optional = true }
+
+[features]
+default = ["stun", "turn", "logging"]
+stun = ["dep:stun"]
+turn = ["dep:turn", "stun", "turn/logging"]
+logging = ["dep:logging"]

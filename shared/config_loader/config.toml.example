@@ -1,0 +1,36 @@
+# Ejemplo de Configuración para RoomRTC
+
+[server]
+# Dirección IP donde escuchar (0.0.0.0 = todas las interfaces)
+host = "0.0.0.0"
+
+# Puerto donde escuchar
+port = 8080
+
+# Timeout en segundos para conexiones HTTP
+# Default: 30
+timeout_seconds = 30
+
+# Número máximo de conexiones simultáneas
+# Default: 100
+max_connections = 100
+
+[app]
+# Nombre de la aplicación
+name = "RoomRTC"
+
+# Modo debug (más logs, información de desarrollo)
+# Default: false
+debug = false
+
+# Nivel de logging: "debug", "info", "warn", "error"
+# Default: "info"
+log_level = "info"
+
+[storage]
+# Directorio donde guardar datos persistentes
+data_dir = "./data"
+
+# Habilitar backups automáticos
+# Default: false
+backup_enabled = false

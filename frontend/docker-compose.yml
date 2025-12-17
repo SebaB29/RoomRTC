@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ..
+      dockerfile: frontend/Dockerfile
+    container_name: roomrtc-frontend
+    
+    # X11 forwarding for GUI (Linux/macOS with XQuartz)
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+      - RUST_LOG=info
+    
+    volumes:
+      # X11 socket for GUI display
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      # Optional: persist logs
+      - ./frontend.log:/home/rustuser/frontend.log
+    
+    # Network mode host for easier X11 access
+    network_mode: host
+    
+    # Grant X11 access
+    ipc: host
+    
+    # Optional: camera access (if needed)
+    devices:
+      - /dev/video0:/dev/video0
+    
+    restart: unless-stopped

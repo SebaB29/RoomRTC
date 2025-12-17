@@ -1,0 +1,6 @@
+# User database (plain text format)
+# Format: id|username|password_hash|created_at
+#
+user2|bob|000000000731ca36|1764140636
+user1|alice|0000000000398e50|1764140636
+user2|bob|0000000000398e50|1764140636

@@ -1,0 +1,20 @@
+[package]
+name = "roomrtc-server"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+# Internal dependenciess
+logging = { path = "../shared/logger" }
+json_parser = { path = "../shared/json_parser" }
+config_loader = { path = "../shared/config_loader" }
+webrtc = { path = "../webrtc" }
+sdp = { path = "../webrtc/sdp" }
+
+# Low-level allowed crates
+rand = "0.8"
+chrono = "0.4"
+
+# TLS for signaling
+rustls = "0.23"
+native-tls = "0.2"

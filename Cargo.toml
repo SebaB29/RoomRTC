@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+
+members = [
+    # Frontend
+    "frontend",
+
+    # Backend (Server/Application)
+    "backend",
+    
+    # Shared utilities
+    "shared/logger",
+    "shared/json_parser",
+    "shared/config_loader",
+    
+    # WebRTC (Independent library)
+    "webrtc",
+    "webrtc/ice",
+    "webrtc/media",
+    "webrtc/network",
+    "webrtc/sdp",
+    "webrtc/stun",
+]

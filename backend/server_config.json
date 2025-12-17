@@ -1,0 +1,16 @@
+{
+  "server": {
+    "bind_address": "0.0.0.0",
+    "port": 8081,
+    "max_connections": 100,
+    "enable_tls": true,
+    "pkcs12_path": "identity.pfx",
+    "pkcs12_password": ""
+  },
+  "logging": {
+    "log_file_path": "roomrtc-server.log",
+    "log_level": "info",
+    "enable_console": true,
+    "enable_file": true
+  }
+}

@@ -1,0 +1,28 @@
+[package]
+name = "frontend"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+eframe = { version = "0.33", default-features = false, features = [
+    "default_fonts",
+    "glow",
+    "x11",
+    "wayland",
+] }
+egui = "0.33"
+rand = "0.8"
+native-tls = "0.2"
+dirs = "5.0"
+
+# Video capture & processing (desktop only)
+opencv = { version = "0.97", default-features = false, features = ["videoio", "highgui", "imgproc", "clang-runtime"] }
+
+# WebRTC module
+webrtc = { path = "../webrtc" }
+logging = { path = "../shared/logger" }
+json_parser = { path = "../shared/json_parser" }
+
+[[bin]]
+name = "frontend"
+path = "src/main.rs"

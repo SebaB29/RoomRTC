@@ -1,0 +1,11 @@
+[package]
+name = "logging"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+# Utilities
+chrono = "0.4"
+
+[dev-dependencies]
+tempfile = "3.23"

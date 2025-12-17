@@ -1,0 +1,19 @@
+[package]
+name = "media"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+# Video capture & processing
+opencv = { version = "0.97", features = ["clang-runtime","videoio", "highgui", "imgproc"] }
+logging = { path = "../../shared/logger" }
+
+# Audio capture and playback
+cpal = "0.15"
+
+# Codec 
+ffmpeg-next = "8.0"
+ffmpeg-sys-next = "8.0" 
+
+[dev-dependencies]
+tempfile = "3.23"

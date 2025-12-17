@@ -1,0 +1,12 @@
+[package]
+name = "turn"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+stun = { path = "../stun" }
+logging = { path = "../../shared/logger", optional = true }
+
+[features]
+default = ["logging"]
+logging = ["dep:logging"]

@@ -1,0 +1,10 @@
+[package]
+name = "config_loader"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+# Zero external dependencies - only std library
+json_parser = { path = "../json_parser" }
+
+[dev-dependencies]
