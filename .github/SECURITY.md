@@ -21,7 +21,7 @@ We take the security of RoomRTC seriously. If you believe you have found a secur
 
 Instead, please report security vulnerabilities by:
 
-1. **Email**: Send an email to [security contact - update with actual email]
+1. **Email**: Send an email to sebita29@gmail.com
 2. **Subject Line**: Include "RoomRTC Security Vulnerability" in the subject
 3. **Details to Include**:
    - Type of vulnerability
