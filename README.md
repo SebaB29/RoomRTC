@@ -34,12 +34,12 @@ This repository contains all source code, documentation, and configuration files
 <a name="team"></a>
 ## 👥 Team Members
 
-| StudentID | Name |
-| :-------: | :------ |
-| 103384 | Adriana Macarena Iglesias Tripodi |
-| 105288 | Sebastián Brizuela |
-| 105400 | Franco Altieri Lamas |
-| 105907 | Nicolás Chen |
+| StudentID | Name                              | Github                                            |
+| :-------: | :-------------------------------- | :-----------------------------------------------  |
+| 103384    | Adriana Macarena Iglesias Tripodi | [AIglesiasT](https://github.com/AIglesiasT)       |
+| 105288    | Sebastián Brizuela                | [SebaB29](https://github.com/SebaB29)             |
+| 105400    | Franco Altieri Lamas              | [FrancoAltieri](https://github.com/FrancoAltieri) |
+| 105907    | Nicolás Chen                      | [nichen710](https://github.com/nichen710)         |
 
 <a name="about"></a>
 ## ℹ️ About the Project
